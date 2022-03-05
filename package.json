@@ -1,0 +1,27 @@
+{
+  "name": "@digitallinguistics/design",
+  "version": "0.1.0",
+  "description": "The design system for Digital Linguistics (DLx) projects.",
+  "keywords": [
+    "Digital Linguistics",
+    "linguistics",
+    "language"
+  ],
+  "homepage": "https://github.com/digitallinguistics/design",
+  "bugs": "https://github.com/digitallinguistics/design/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Daniel W. Hieber",
+    "url": "https://github.com/dwhieb"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digitallinguistics/design.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">= 16.0.0"
+  }
+}
