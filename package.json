@@ -23,5 +23,10 @@
   },
   "engines": {
     "node": ">= 16.0.0"
+  },
+  "scripts": {
+  },
+  "devDependencies": {
+    "eslint": "^8.11.0"
   }
 }
