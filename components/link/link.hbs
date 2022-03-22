@@ -1,3 +1,22 @@
-<p>This is a paragraph with a <a class=link href=#>link</a> in it.</p>
+<style>
 
-<p>This is a paragraph with an <a class=link href="https://github.com/digitallinguistics">external link</a> in it.</p>
+  .link-preview p {
+    padding: var(--text-padding);
+  }
+
+  .p-dark {
+    background-color: var(--blue);
+    color           : white;
+  }
+
+</style>
+
+<main class=link-preview>
+
+  <p>This is a paragraph with a <a class=link href=#>link</a> in it.</p>
+
+  <p>This is a paragraph with an <a class=link href="https://github.com/digitallinguistics">external link</a> in it.</p>
+
+  <p class=p-dark>This is a paragraph with a dark background and a <a class="link dark" href="https://github.com/digitallinguistics">link</a> in it.</p>
+
+</main>
