@@ -39,6 +39,18 @@
   --measure-sm: 45em;
   --measure   : 60em;  // the maximum width of readable text
 
+  --text-base-size:   1em;
+  --text-scale-ratio: 1.2;
+
+  --text-xs:   calc(var(--text-base-size) / var(--text-scale-ratio) / var(--text-scale-ratio));
+  --text-sm:   calc(var(--text-base-size) / var(--text-scale-ratio));
+  // base size is here
+  --text-md:   calc(var(--text-base-size) * var(--text-scale-ratio));
+  --text-lg:   calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xl:   calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xxl:  calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xxxl: calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+
   --text-inline-padding-sm: 0.25em;
   --text-inline-padding   : 0.5em;
   --text-inline-padding-lg: 1em;
