@@ -1,0 +1,21 @@
+@import (reference) 'global/borders.less';
+@import (reference) 'global/utilities.less';
+
+.skip-link {
+
+  background-color: white;
+  border-radius   : var(--border-radius);
+  margin          : var(--space-xxxs);
+  padding         : var(--text-padding);
+  position        : absolute;
+
+  &:hover {
+    background-color: white;
+    text-decoration : underline;
+  }
+
+  &:not(:focus) {
+    .visually-hidden;
+  }
+
+}
