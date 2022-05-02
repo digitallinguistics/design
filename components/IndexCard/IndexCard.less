@@ -1,0 +1,72 @@
+@import (reference) 'utilities.less';
+
+.index-card {
+
+  background-color: white;
+  border          : var(--border);
+  border-radius   : var(--border-radius);
+  box-shadow      : var(--box-shadow);
+  max-inline-size : var(--measure-sm);
+
+  &__content {
+    background-clip   : content-box;
+    background-image  : repeating-linear-gradient(to bottom, white 0, white 1.65em, hsl(180, 100%, 35%) 1.65em, hsl(180, 100%, 35%) 1.75em);
+    border-block-start: 0.2em solid hsla(0, 100%, 50%, 0.6);
+    border-radius     : 0 0 var(--border-radius) var(--border-radius);
+    min-block-size    : 3em;
+    line-height       : 1.75;
+  }
+
+  &__header {
+    padding: var(--space-xs);
+  }
+
+  &__label {
+    color    : var(--gray);
+    font-size: small;
+  }
+
+  &__metadata {
+    flex-direction: row;
+  }
+
+  &__prop {
+    flex-direction   : column;
+    margin-inline-end: var(--space);
+  }
+
+  &__source {
+    font-weight: bold;
+    font-size  : smaller;
+  }
+
+  &__source-label {
+    .visually-hidden;
+  }
+
+  &__text {
+    padding-inline: var(--space-xs);
+  }
+
+  &__value {
+    font-size: small;
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    background-color: var(--background-color-dark);
+    color           : var(--text-color-dark);
+
+    &__content {
+      background-image  : repeating-linear-gradient(to bottom, var(--background-color-dark) 0, var(--background-color-dark) 1.65em, hsl(180, 100%, 30%) 1.65em, hsl(180, 100%, 30%) 1.75em);
+      border-block-start: 0.2em solid hsla(0, 100%, 50%, 0.7);
+    }
+
+    &__label {
+      color      : var(--text-color-dark);
+      font-weight: 600;
+    }
+
+  }
+
+}
