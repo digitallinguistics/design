@@ -8,6 +8,7 @@
 @import 'typography.less';
 @import 'utilities.less';
 @import 'borders.less';
+@import 'temp.less';
 
 // Components
 @import 'BlockHeader/BlockHeader.less';
@@ -16,6 +17,7 @@
 @import 'List/List.less';
 @import 'NavList/NavList.less';
 @import 'Note/Note.less';
+@import 'Notes/Notes.less';
 @import 'PageTitle/PageTitle.less';
 @import 'SectionHeader/SectionHeader.less';
 @import 'SkipLink/SkipLink.less';
@@ -23,4 +25,11 @@
 body {
   font-family: var(--font);
   line-height: 1.5;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--background-color-dark);
+    color           : var(--text-color-dark);
+  }
 }
