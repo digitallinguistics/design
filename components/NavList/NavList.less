@@ -37,10 +37,16 @@
   }
 
   @media (prefers-color-scheme: dark) {
+
     li:hover {
       background-color: var(--blue-1);
       color           : var(--background-color-dark);
     }
+
+    li:last-child:hover {
+      margin-block-end: -1px;
+    }
+
   }
 
 }
