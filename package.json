@@ -29,12 +29,14 @@
     "start": "node build && fractal start --port 3002 --sync --watch"
   },
   "devDependencies": {
-    "@digitallinguistics/styles": "^2.0.2",
     "@frctl/fractal": "^1.5.13",
     "clean-css": "^5.2.4",
     "eslint": "^8.11.0",
     "flexbox-reset": "^4.0.0",
     "less": "^4.1.2",
     "ora": "^6.1.0"
+  },
+  "peerDependencies": {
+    "@digitallinguistics/styles": "^2.0.2"
   }
 }
