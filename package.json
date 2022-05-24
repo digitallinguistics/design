@@ -37,6 +37,6 @@
     "ora": "^6.1.0"
   },
   "peerDependencies": {
-    "@digitallinguistics/styles": "^2.0.2"
+    "@digitallinguistics/styles": "^2.0.3"
   }
 }
