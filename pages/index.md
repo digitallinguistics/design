@@ -1,8 +1,8 @@
 ---
-title: DLx Component Library
+title: DLx Design System
 ---
 
-The component library for DLx projects.
+The design system and pattern library for DLx projects.
 
 DLx projects should import the following resets and global styles, followed by any specific components that are needed, and then styling for body (most likely following the same `body` style declarations as below).
 
