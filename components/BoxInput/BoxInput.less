@@ -1,0 +1,74 @@
+.box-input {
+
+  --focus-color: var(--blue);
+
+  background-color: white;
+  border          : var(--border);
+  border-radius   : var(--border-radius);
+  padding         : var(--text-padding);
+
+  &:disabled,
+  &::placeholder,
+  &:read-only {
+    color: var(--gray-7);
+  }
+
+  &:disabled,
+  &:read-only {
+    background-color: hsl(var(--gray-hue), var(--gray-saturation), 90%, 0.3);
+  }
+
+  &:focus-within {
+    border-color: var(--focus-color);
+    box-shadow  : 0 0 0 var(--focus-width) var(--focus-color);
+    outline     : none;
+  }
+
+  &:invalid {
+    border-color: var(--red);
+  }
+
+  &:invalid:focus-within {
+    --focus-color: var(--red);
+  }
+
+  &:read-only:focus-within {
+    --focus-color: var(--gray);
+  }
+
+  &::placeholder {
+    font-style: italic;
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    --focus-color: var(--blue-4);
+
+    background-color: var(--background-color-dark);
+    color           : var(--text-color-dark);
+
+    &::placeholder {
+      color: var(--text-color-dark);
+    }
+
+    &:disabled,
+    &:read-only {
+      background-color: hsl(var(--gray-hue), var(--gray-saturation), 90%, 0.5);
+      color           : white;
+    }
+
+    &:invalid {
+      border-color: var(--red-3);
+    }
+
+    &:invalid:focus-within {
+      --focus-color: var(--red-3);
+    }
+
+    &:read-only:focus-within {
+      --focus-color: var(--text-color-dark);
+    }
+
+  }
+
+}
