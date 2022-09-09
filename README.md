@@ -14,4 +14,5 @@ The design system and pattern library for Digital Linguistics (DLx) projects. In
 2. Merge commit into `main`. The commit will automatically publish as a new version.
 
 <!-- LINKS -->
+
 [styles]: https://styles.digitallinguistics.io
