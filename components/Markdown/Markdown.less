@@ -1,9 +1,15 @@
 .md {
 
+  --list-indent: 2.5em;
+
   :is(h1, h2) {
     font-weight   : 300;
     padding-block : var(--text-block-padding);
     padding-inline: 0.5rem;
+  }
+
+  :is(ol, ul) {
+    margin-block: var(--space-xs);
   }
 
   h1 {
@@ -14,8 +20,22 @@
     font-size: x-large;
   }
 
+  li {
+    display: list-item;
+  }
+
+  ol {
+    list-style         : decimal outside none;
+    margin-inline-start: var(--list-indent);
+  }
+
   p {
     padding: var(--text-padding);
+  }
+
+  ul {
+    list-style         : disc outside none;
+    margin-inline-start: var(--list-indent);
   }
 
 }
