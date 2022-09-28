@@ -32,14 +32,13 @@
 
     &::after {
 
-      background-image   :
-        linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
-        url('@{external-link}');
+      background-image   : url('@{external-link}');
       background-repeat  : no-repeat;
       background-position: center;
       background-size    : contain;
       content            : '(external link)';
       display            : inline-block;
+      filter             : opacity(0.5);
       inline-size        : var(--icon-width);
       margin-inline-start: 0.1em;
       overflow           : hidden;
@@ -55,7 +54,7 @@
 
     &:hover::after {
 
-      background-image: url('@{external-link}');
+      filter: opacity(1);
 
       @media (prefers-color-scheme: dark) {
         background-image: url('@{external-link-dark}');
