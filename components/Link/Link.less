@@ -26,9 +26,10 @@
 
   &:not([href*='digitallinguistics.io'], [href^='#'], [href^='/']) {
 
-    --icon-width: 0.75em;
+    --icon-width  : 0.75em;
+    --icon-padding: 0.125em;
 
-    margin-inline-end: var(--icon-width);
+    margin-inline-end: calc(var(--icon-width) + var(--icon-padding));
 
     &::after {
 
@@ -40,7 +41,7 @@
       display            : inline-block;
       filter             : opacity(0.5);
       inline-size        : var(--icon-width);
-      margin-inline-start: 0.25em;
+      margin-inline-start: var(--icon-padding);
       overflow           : hidden;
       position           : absolute;
       text-indent        : var(--icon-width);
