@@ -3,23 +3,35 @@
 
 .link {
 
-  font-weight: 500;
-  position   : relative;
+  cursor                   : pointer;
+  font-weight              : 500;
+  position                 : relative;
+  text-underline-position  : under;
+  text-decoration-skip-ink : all;
+  text-decoration-thickness: 0.125em;
 
   &:link {
+
     color: var(--blue);
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--blue-4);
+    }
+
   }
 
   &:visited {
+
     color: var(--purple);
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--purple-4);
+    }
+
   }
 
   &:hover {
-    cursor                   : pointer;
-    text-decoration          : underline;
-    text-decoration-skip-ink : auto;
-    text-decoration-thickness: 0.125em;
-    text-underline-position  : under;
+    text-decoration-line: underline;
   }
 
   // use default :focus and :focus-visible styles
@@ -65,16 +77,9 @@
 
   }
 
-  @media (prefers-color-scheme: dark) {
-
-    &:link {
-      color: var(--blue-4);
-    }
-
-    &:visited {
-      color: var(--purple-4);
-    }
-
+  &.subtle {
+    font-weight              : normal;
+    text-decoration-thickness: initial;
   }
 
 }
