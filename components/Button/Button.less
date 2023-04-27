@@ -1,0 +1,167 @@
+.btn, .button {
+
+  --focus-color: var(--gray);
+
+  align-items     : center;
+  background-color: var(--gray-1);
+  border-radius   : var(--border-radius);
+  box-shadow      : 1px 1px 3px var(--gray-3);
+  cursor          : pointer;
+  display         : flex;
+  font-weight     : 500;
+  justify-content : center;
+  padding         : var(--text-padding);
+  text-align      : center;
+  transition      : 0.2s background-color ease-in-out;
+  white-space     : nowrap;
+
+  @media (prefers-color-scheme: dark) {
+    box-shadow: 1px 1px 3px var(--gray-5);
+    color     : var(--background-color-dark);
+  }
+
+  &:hover {
+    background-color: var(--gray-2);
+  }
+
+  &:focus-within {
+    border-color: var(--focus-color);
+    box-shadow  : 0 0 0 var(--focus-width) var(--focus-color);
+    outline     : none;
+  }
+
+  &:active {
+    background-color: var(--gray-3);
+    box-shadow      : inset 0px 1px 2px var(--gray-5);
+  }
+
+  &.primary {
+
+    --focus-color: var(--blue-3);
+
+    background-color: var(--blue-5);
+    color           : white;
+
+    &:hover {
+      background-color: var(--blue-6);
+    }
+
+    &:active {
+      background-color: var(--blue-7);
+      box-shadow      : inset 0px 1px 2px var(--blue-9);
+    }
+
+  }
+
+  &.secondary {
+
+    --focus-color: var(--purple-3);
+
+    background-color: var(--purple-5);
+    color           : white;
+
+    &:hover {
+      background-color: var(--purple-6);
+    }
+
+    &:active {
+      background-color: var(--purple-7);
+      box-shadow      : inset 0px 1px 2px var(--purple-9);
+    }
+
+  }
+
+  &.success,
+  &.add {
+
+    --focus-color: var(--green-5);
+
+    background-color: var(--green-6);
+    color           : white;
+
+    &:hover {
+      background-color: var(--green-7);
+    }
+
+    &:active {
+      background-color: var(--green-8);
+      box-shadow      : inset 0px 1px 2px var(--green-9);
+    }
+
+  }
+
+  &.warning {
+
+    --focus-color: var(--yellow-3);
+
+    background-color: var(--yellow-5);
+    color           : var(--background-color-dark);
+
+    &:hover {
+      background-color: var(--yellow-6);
+    }
+
+    &:active {
+      background-color: var(--yellow-7);
+      box-shadow      : inset 0px 1px 2px var(--yellow-9);
+    }
+
+  }
+
+  &.alert,
+  &.cancel {
+
+    --focus-color: var(--red-3);
+
+    background-color: var(--red-5);
+    color           : white;
+
+    &:hover {
+      background-color: var(--red-6);
+    }
+
+    &:active {
+      background-color: var(--red-7);
+      box-shadow      : inset 0px 1px 2px var(--red-9);
+    }
+
+  }
+
+  &.info {
+
+    --focus-color: var(--cyan-5);
+
+    background-color: var(--cyan-6);
+    color           : white;
+
+    &:hover {
+      background-color: var(--cyan-7);
+    }
+
+    &:active {
+      background-color: var(--cyan-8);
+      box-shadow      : inset 0px 1px 2px var(--cyan-9);
+    }
+
+  }
+
+  &[disabled] {
+
+    background-color: var(--gray-1);
+    box-shadow      : none;
+    color           : var(--gray-6);
+    cursor          : not-allowed;
+
+    &:hover, &:active {
+      box-shadow      : none;
+      background-color: var(--gray-1);
+    }
+
+  }
+
+  svg {
+    pointer-events: none;
+    vertical-align: middle;
+  }
+
+}
