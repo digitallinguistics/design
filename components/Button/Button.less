@@ -5,10 +5,10 @@
   align-items     : center;
   background-color: var(--gray-1);
   border-radius   : var(--border-radius);
-  box-shadow      : 1px 1px 3px var(--gray-3);
   cursor          : pointer;
   display         : flex;
   font-weight     : 500;
+  gap             : 0.25em;
   justify-content : center;
   padding         : var(--text-padding);
   text-align      : center;
@@ -16,8 +16,7 @@
   white-space     : nowrap;
 
   @media (prefers-color-scheme: dark) {
-    box-shadow: 1px 1px 3px var(--gray-5);
-    color     : var(--background-color-dark);
+    color: var(--background-color-dark);
   }
 
   &:hover {
@@ -148,7 +147,6 @@
   &[disabled] {
 
     background-color: var(--gray-1);
-    box-shadow      : none;
     color           : var(--gray-6);
     cursor          : not-allowed;
 
@@ -160,6 +158,8 @@
   }
 
   svg {
+    block-size    : 1em;
+    inline-size   : 1em;
     pointer-events: none;
     vertical-align: middle;
   }
